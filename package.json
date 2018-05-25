@@ -1,0 +1,26 @@
+{
+  "name": "aws-ssm-cli",
+  "version": "1.0.0",
+  "description": "A cli tool to help manage ssm variables across multiple aws accounts",
+  "main": "cli.js",
+  "bin": {
+    "ssm": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "ssm",
+    "cli"
+  ],
+  "author": "Benjamin Forster",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.246.1",
+    "commander": "^2.15.1"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
