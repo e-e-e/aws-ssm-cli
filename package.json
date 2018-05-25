@@ -1,6 +1,6 @@
 {
   "name": "aws-ssm-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A cli tool to help manage ssm variables across multiple aws accounts",
   "main": "cli.js",
   "bin": {
