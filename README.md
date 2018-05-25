@@ -1,6 +1,6 @@
 # aws-ssm-cli
 
-A simple to manage SSM variables across multiple accounts.
+A cli tool to help manage ssm variables across multiple aws accounts
 
 # install
 
@@ -25,7 +25,7 @@ Export ssm variables into a line separated JSON file.
     -h, --help               output usage information
 ```
 
-#### `ssm export [options] [file]`
+#### `ssm import [options] [file]`
 
 Import ssm variables stored as line separated JSON file.
 
