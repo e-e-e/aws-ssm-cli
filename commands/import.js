@@ -6,6 +6,7 @@ const readline = require('readline')
 module.exports = function (file, options) {
   if (!options) return
   if (!options.region) options.region = 'ap-southeast-2'
+  if (!options.overwrite) options.overwrite = false
   let credentials
   if (options.profile) {
     credentials = new AWS.SharedIniFileCredentials({ profile: options.profile })
@@ -22,7 +23,7 @@ module.exports = function (file, options) {
       Name: data.Name,
       Type: data.Type,
       Value: data.Value,
-      Overwrite: false
+      Overwrite: options.overwrite
     }
     if (data.Type === 'SecureString') {
       params.KeyId = options.encryptionKeyId

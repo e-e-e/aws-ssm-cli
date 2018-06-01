@@ -14,6 +14,7 @@ program
 
 program
   .command('import <file>')
+  .option('-f, --overwrite', 'allow overwriting of variables')
   .option('-r, --region <region>', 'Set the region')
   .option('-p, --profile <profile>', 'Which AWS profile to use')
   .option('-k, --encryptionKeyId <key>', 'A key to sign secure string parameters')
